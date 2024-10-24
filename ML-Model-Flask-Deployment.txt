@@ -1,0 +1,48 @@
+ML-Model-Flask-Deployment:-
+
+This is a demo project to elaborate how Machine Learning Models are 
+deployed on production using Flask.
+
+Prerequisites:-
+
+You must have Scikit Learn, Pandas and Flask  installed.
+
+Project Structure:-
+
+This project has three major parts :-
+
+iris.py - This contains code fot our Machine Learning model to 
+predict Iris flower class based on training data in 'iris.csv' file.
+
+app.py - This contains Flask APIs that receives features details 
+through GUI or API calls, computes the predicted value based on 
+our model and returns it.
+
+templates - This folder contains the HTML template to allow user
+to enter feature details and displays the predicted Iris Flower Species.
+
+Running the project:-
+
+Ensure that you are in the project home directory:-
+
+1. Create the machine learning model by running below command:
+
+python iris.py
+
+This would create a serialized version of our model into a file iris.pkl
+
+2. Run app.py using below command to start Flask API:
+
+python app.py
+
+By default, flask will run on port 5000.
+
+3. Navigate to URL http://localhost:5000 
+
+You should be able to view the homepage.
+
+Enter valid numerical values in all 4 input boxes and hit Predict.
+
+If everything goes well, you should be able to see the predcited 
+Iris Flower Species on the HTML page!.
+
